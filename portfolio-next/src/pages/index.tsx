@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import Header from "components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,16 @@ export default function Home() {
       </Head>
       <main >
         <div>
-          <h1 className="text-xl text-red-500">Tailwind Testing</h1>
+          {/* Header */}
+<Header />
+          {/* Hero */}
+
+          {/* About */}
+
+          {/* Projects */}
+
+          {/* Contact */}
+
         </div>
       </main>
 
