@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Header from "components/Header";
+import Hero from "components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div>
-          
-          {/* Header */}
-<Header />
+        <div className="bg-zinc-700 text-white h-screen snap-y snap-mandatory overflow-scroll">
+          <Header />
           {/* Hero */}
-
+          <section id='hero' className="snap-center">
+            <Hero />
+          </section>
           {/* About */}
 
           {/* Projects */}
