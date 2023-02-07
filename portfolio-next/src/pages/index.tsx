@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div className="bg-zinc-700 text-white h-screen snap-y snap-mandatory overflow-scroll">
+        <div className="bg-zinc-800 text-white h-screen snap-y snap-mandatory overflow-scroll">
           <Header />
           {/* Hero */}
           <section id='hero' className="snap-center">
