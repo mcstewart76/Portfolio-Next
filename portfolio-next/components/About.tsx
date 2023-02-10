@@ -6,14 +6,14 @@ type Props = {}
 function About({ }: Props) {
     return (
         <motion.div className='flex flex-col relative h-screen text-center
-     md:text-left md:flex-row max-w-7xl px-10 pt-5 justify-center mx-auto items-center'
-     initial={{opacity: 0}}
-     animate={{opacity: 1}}
-     transition={{duration: 1.6}}
-     >
+                            md:text-left md:flex-row max-w-7xl px-10 pt-5 justify-center mx-auto items-center '
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.6 }}
+        >
             <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl ml-3.5 text-zinc-500'>About</h3>
             <motion.img src='https://avatars.githubusercontent.com/u/90533949?s=96&v=4' alt='about-img'
-                className='h-48 w-48 mb-20 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:h-100 xl:w-100
+                className='h-48 w-48 my-8 sm:mb-14 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:h-100 xl:w-100
             rounded-full object-cover'
                 initial={{
                     opacity: 0,
@@ -31,8 +31,8 @@ function About({ }: Props) {
                 </h4>
                 <p className='text-base'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Ut tempus vulputate dui vitae vehicula. Suspendisse facilisis sollicitudin metus,
-                      at sodales felis malesuada sit amet. Etiam sit amet neque at nulla blandit condimentum at vitae nisi.
+                    Ut tempus vulputate dui vitae vehicula. Suspendisse facilisis sollicitudin metus,
+                    at sodales felis malesuada sit amet. Etiam sit amet neque at nulla blandit condimentum at vitae nisi.
                 </p>
             </div>
         </motion.div>
