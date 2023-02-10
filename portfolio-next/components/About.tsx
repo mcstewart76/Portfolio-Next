@@ -11,13 +11,13 @@ function About({ }: Props) {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.6 }}
         >
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl ml-3.5 text-zinc-500'>About</h3>
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl ml-3.5 mb-3.5 text-zinc-500'>About</h3>
             <motion.img src='https://avatars.githubusercontent.com/u/90533949?s=96&v=4' alt='about-img'
-                className='h-48 w-48 my-8 sm:mb-14 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:h-100 xl:w-100
+                className='h-48 w-48 mb-8 sm:mb-14 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:h-100 xl:w-100
             rounded-full object-cover'
                 initial={{
                     opacity: 0,
-                    x: -300
+                    x: -200
                 }}
                 whileInView={{
                     opacity: 1,

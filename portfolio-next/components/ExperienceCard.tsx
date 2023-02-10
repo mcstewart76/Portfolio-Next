@@ -6,7 +6,7 @@ type Props = {}
 function ExperienceCard({ }: Props) {
     return (
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
-                           w-[340px] sm:w-[400px] md:w-[400px] xl:w-[900px] snap-center bg-zinc-600 px-12 p-10'>
+                           w-[340px] sm:w-[400px] md:w-[900px] xl:max-w-[900px] snap-center bg-zinc-700 px-12 p-10'>
 
             <motion.img className='rounded-full h-32 w-32 object-cover xl:w-100 xl:h-100'
                 src="https://i.seadn.io/gae/JtcNSW3E6V94rwCnmt-sRUyXwvE9mLU5n9MZ15XMDDbI_S8mf3QI7GKU3f1ldDGZXl14ss9BMWbEJaYcYYAAB-yfBQn0sJOzzNs-NQ?auto=format&w=1000"

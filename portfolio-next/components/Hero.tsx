@@ -15,7 +15,7 @@ export default function Hero({ }: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <div className='flex flex-col '>
                 <Squares />
-                <img className='h-32 w-32 mx-auto object-cover relative rounded-full' src='https://avatars.githubusercontent.com/u/90533949?s=96&v=4' alt='portfolio img'></img>
+                <img className='h-32 w-32 mb-3 mx-auto object-cover relative rounded-full' src='https://avatars.githubusercontent.com/u/90533949?s=96&v=4' alt='portfolio img'></img>
                 <div className='z-20'>
                     <h2 className='text-lg uppercase text-zinc-500 pb-5 tracking-[8px]'>Fullstack Web Developer</h2>
                     <h1 className='text-3xl font-semibold px-10'>
