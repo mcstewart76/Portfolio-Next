@@ -18,16 +18,17 @@ function Skill({ skillsRight }: Props) {
                 transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}
             />
-            <div className='absolute opacity-0 group-hover:opacity-70 transition duration-300 ease-in-out group-hover:bg-white
+            {/* <div className='absolute opacity-0 group-hover:opacity-70 transition duration-300 ease-in-out group-hover:bg-white
                            h-12 w-12 sm:h-20 sm:w-20 md:w-32 md:h-32 rounded-full z-0'>
                 <div className='flex items-center justify-center h-full'>
                     <p className='text-base sm:text-xl md:text-3xl font-bold text-black'>
                         80%
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
+
 
 export default Skill
