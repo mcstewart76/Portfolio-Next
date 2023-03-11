@@ -12,7 +12,7 @@ function Skills({ }: Props) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <div className='col-span-3  row-start-2 items-start text-center'>
+            <div className='col-span-3 row-start-2 items-start text-center'>
                 <h3 className='uppercase tracking-[20px] pb-3 text-2xl text-zinc-500'>
                     Skills
                 </h3>
