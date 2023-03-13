@@ -6,8 +6,8 @@ type Props = {};
 function ExperienceCard({ }: Props) {
     return (
         <article
-            className="flex flex-col rounded-lg items-center space-y-7 overflow-scroll-y sm:flex-shrink-0
-                 snap-center bg-zinc-700 px-10 py-4"
+            className="flex flex-col rounded-lg items-center space-y-7 overflow-scroll-y flex-shrink-0
+                 snap-center bg-zinc-700 px-10 py-4 w-[80%]"
         >
             <motion.img
                 className="rounded-full h-32 w-32 object-cover xl:w-100 xl:h-100"
