@@ -17,7 +17,7 @@ function Skills({ }: Props) {
                     Skills
                 </h3>
                 <h3 className='uppercase tracking-widest text-base text-zinc-500'>
-                    Hover a skill for proficiency
+                    Skills I have acquired
                 </h3>
             </div>
             <div className='col-start-2 col-end-3 row-start-3 row-end-4'>
