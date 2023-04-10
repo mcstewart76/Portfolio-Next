@@ -8,7 +8,7 @@ function ContactMe({ }: Props) {
         <div className='h-screen relative mx-auto items-center text-center flex flex-col md:text-left md:flex-row max-w-7xl px-10 justify-evenly'>
             <h3 className='absolute top-24 uppercase tracking-[20px] pb-3 text-2xl text-zinc-500'>Contact</h3>
 
-            <div className='flex flex-col justify-center space-y-5 md:space-y-8 '>
+            <div className='flex absolute top-36 flex-col justify-center space-y-5 md:space-y-8'>
                 <h4 className='text-2xl md:text-3xl font-semibold text-center'>
                     Let me know what I can do <span className='decoration-blue-400/50 underline'>for you</span> .
                 </h4>
@@ -26,15 +26,17 @@ function ContactMe({ }: Props) {
                         <p className='md:text-xl text-lg'>mcstewart76@gmail.com</p>
                     </div>
                 </div>
-                <form action="" className='flex flex-col mx-auto space-y-2'>
-                    <div className='flex space-x-2'>
-                        <input type="text" className='contactMeInput' />
-                        <input type="text" className='contactMeInput' />
-                    </div>
-                    <input type="text" className='contactMeInput' />
-                    <textarea name="" id="" className='contactMeInput'></textarea>
-                    <button className='py-4 px-10 rounded-md text-zinc-900 font-bold text-md md:text-xl bg-blue-400/40'>Submit</button>
-                </form>
+                <div className='flex flex-col  mx-auto'>
+                    <form action="" className='flex flex-col mx-auto space-y-3'>
+                        <div className='flex space-x-2'>
+                            <input type="text" placeholder='Name' className='contactMeInput' />
+                            <input type="text" placeholder='Email' className='contactMeInput' />
+                        </div>
+                        <input type="text" placeholder='Subject' className='contactMeInput' />
+                        <textarea name="" id="" placeholder='Message' className='contactMeInput' />
+                        <button className='py-4 px-10 rounded-md text-zinc-900 font-bold text-md md:text-xl bg-blue-400/80'>Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
