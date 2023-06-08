@@ -17,7 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div className="bg-zinc-800 text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+        <div className="bg-zinc-800 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
+        scrollbar scrollbar-track-slate-700/30 scrollbar-thumb-blue-400">
           <Header />
           <section id='hero' className="snap-start">
             <Hero />
@@ -34,11 +35,9 @@ export default function Home() {
           <section id='projects' className="snap-center">
             <Projects />
           </section>
-          <section className="snap-center">
+          <section id='contact' className="snap-center">
             <ContactMe />
           </section>
-          {/* Contact */}
-
         </div>
       </main>
 

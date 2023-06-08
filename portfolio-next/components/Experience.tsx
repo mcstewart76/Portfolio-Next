@@ -19,7 +19,7 @@ function Experience({ }: Props) {
                 </h3>
             </div>
             <div className="flex overflow-x-scroll space-x-6 snap-x snap-mandatory col-start-1 col-end-5 sm:col-start-2 sm:col-end-3
-                     row-start-3 row-end-6">
+                     row-start-3 row-end-6 scrollbar-thin scrollbar-track-slate-700/30 scrollbar-thumb-blue-400">
                 <ExperienceCard />
                 <ExperienceCard />
                 <ExperienceCard />

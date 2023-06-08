@@ -1,9 +1,46 @@
 import React from 'react'
+import { useForm, Resolver, SubmitHandler } from 'react-hook-form';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 
 type Props = {}
+type Inputs = {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+};
+
+const resolver: Resolver<Inputs> = async (values) => {
+    return {
+        values: values.name ? values : {},
+        errors: !values.name
+            ? {
+                name: {
+                    type: 'required',
+                    message: 'This is required.',
+                },
+                email: {
+                    type: 'required',
+                },
+                subject: {
+                    type: 'required',
+                },
+                message: {
+                    type: 'required',
+                },
+            }
+            : {},
+    };
+};
 
 function ContactMe({ }: Props) {
+    const { register, handleSubmit,
+          } = useForm<Inputs>();
+    const onSubmit: SubmitHandler<Inputs> = (formData) => {
+        window.location.href = `mailto:mcstewart76@gmail.com?subject=${formData.subject}&body=Hello, my name is:${formData.name}. 
+        ${formData.message} `;
+     };
+
     return (
         <div className='h-screen relative mx-auto items-center text-center flex flex-col md:text-left md:flex-row max-w-7xl px-10 justify-evenly'>
             <h3 className='absolute top-24 uppercase tracking-[20px] pb-3 text-2xl text-zinc-500'>Contact</h3>
@@ -27,14 +64,19 @@ function ContactMe({ }: Props) {
                     </div>
                 </div>
                 <div className='flex flex-col  mx-auto'>
-                    <form action="" className='flex flex-col mx-auto space-y-3'>
+                    <form action="" className='flex flex-col mx-auto space-y-3'
+                        onSubmit={handleSubmit(onSubmit)}
+                    >
                         <div className='flex space-x-2'>
-                            <input type="text" placeholder='Name' className='contactMeInput' />
-                            <input type="text" placeholder='Email' className='contactMeInput' />
+                            <input {...register('name')} type="text" placeholder='Name' className='contactMeInput' />
+                            <input {...register('email')} type="text" placeholder='Email' className='contactMeInput' />
                         </div>
-                        <input type="text" placeholder='Subject' className='contactMeInput' />
-                        <textarea name="" id="" placeholder='Message' className='contactMeInput' />
-                        <button className='py-4 px-10 rounded-md text-zinc-900 font-bold text-md md:text-xl bg-blue-400/80'>Submit</button>
+                        <input {...register('subject')} type="text" placeholder='Subject' className='contactMeInput' />
+                        <textarea {...register('message')} name="" id="" placeholder='Message' className='contactMeInput' />
+                        <button className='py-4 px-10 rounded-md text-zinc-900 font-bold text-md md:text-xl bg-blue-400/80'
+                            type='submit'
+                        >Submit
+                        </button>
                     </form>
                 </div>
             </div>

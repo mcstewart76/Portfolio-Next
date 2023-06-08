@@ -1,6 +1,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -41,8 +42,10 @@ export default function Header({ }: Props) {
                     duration: .5,
                 }}
             >
-                <SocialIcon className='' fgColor='grey' bgColor='transparent' network='email' url='mailto:mcstewart76@gmail.com' />
-                <p className='hidden md:inline-flex text-sm text-gray-400'>Email me!</p>
+                <Link href='#contact'>
+                    {/* <SocialIcon className='' fgColor='grey' bgColor='transparent' network='email' /> */}
+                    <p className='hidden md:inline-flex text-sm text-gray-400'>Email me!</p>
+                </Link>
             </motion.div>
         </header>
     )
