@@ -11,17 +11,17 @@ function Projects({ }: Props) {
     {
         id: 2,
         name: 'Project 2',
-        description: 'Project 1 description'
+        description: 'Project 2 description'
     },
     {
         id: 3,
         name: 'Project 3',
-        description: 'Project 1 description'
+        description: 'Project 3 description'
 
     }
     ];
     return (
-        <div className='h-screen overflow-y-auto scrollbar-none relative mx-auto items-center max-w-full flex flex-col text-left justify-evenly md:flex-row z-0 mb-20'>
+        <div className='h-screen h-90 overflow-y-auto scrollbar-none relative mx-auto items-center max-w-full flex flex-col text-left justify-evenly md:flex-row z-0 mb-20'>
             <div className='w-full absolute top-[30%] bg-blue-400/20 left-0 h-[400px] -skew-y-12'></div>
             <h3 className='absolute top-24 uppercase tracking-[20px] pb-3 text-2xl text-zinc-500'>Projects</h3>
 
