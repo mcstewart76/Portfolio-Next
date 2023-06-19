@@ -1,7 +1,6 @@
+import pageInfo from "./pageInfo"
+import experience from "./experience"
+import project from "./project"
 
 
-import post from './pageInfo'
-
-
-
-export const schemaTypes = [post, ]
+export const schemaTypes = [pageInfo, experience, project]
