@@ -39,8 +39,8 @@ export default defineType({
       type: 'boolean',
     },
     {
-      name: 'technlogies',
-      title: 'Technlogies',
+      name: 'technologies',
+      title: 'Technologies',
       type: 'array',
       of: [{type: 'reference', to: [{type: 'skill'}]}],
     },
