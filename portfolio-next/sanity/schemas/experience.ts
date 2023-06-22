@@ -7,12 +7,12 @@ export default defineType({
   fields: [
     {
       name: 'jobTitle',
-      title: 'JobTitle',
+      title: 'Job Title',
       type: 'string',
     },
     {
       name: 'companyImage',
-      title: 'companyImage',
+      title: 'Company Image',
       type: 'image',
       options: {
         hotspot: true,
@@ -20,22 +20,22 @@ export default defineType({
     },
     {
       name: 'companyName',
-      title: 'CompanyName',
-      type: 'text',
+      title: 'Company Name',
+      type: 'string',
     },
     {
       name: 'dateStarted',
-      title: 'DateEnded',
+      title: 'Date Started',
       type: 'date',
     },
     {
       name: 'dateEnded',
-      title: 'DateEnded',
+      title: 'Date Ended',
       type: 'date',
     },
     {
       name: 'isCurrentJob',
-      title: 'IsCurrentJob',
+      title: 'Is Current Job',
       type: 'boolean',
     },
     {
