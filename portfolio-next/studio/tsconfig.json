@@ -23,7 +23,8 @@
     "schemas/project.ts",
     "schemas/skill.ts",
     "schemas/social.ts",
-    "schemas/experience.ts"
+    "schemas/experience.ts",
+    "sanity.config.ts"
   ],
   "exclude": ["node_modules"]
 }

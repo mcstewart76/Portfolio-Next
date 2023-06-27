@@ -29,3 +29,5 @@ sanity/node_modules
 
 # Dotenv and similar local-only files
 *.local
+.env.local
+.env
