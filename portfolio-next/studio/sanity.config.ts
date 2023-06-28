@@ -1,16 +1,17 @@
-import {defineConfig} from 'sanity/lib/exports'
+import {defineConfig} from 'sanity'
+
 import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
+const projectId = process.env.SANITY_STUDIO_PROJECT_ID! || 'tgw14qe4'
+const dataset = process.env.SANITY_STUDIO_DATASET! || 'production'
+
 export default defineConfig({
-  name: 'default',
-  title: 'portfolio-next-2023',
+  basePath: '/studio', // <-- important that `basePath` matches the route you're mounting your studio from, it applies to both `/pages` and `/app`
+  projectId,
+  dataset,
 
-  projectId: '8mabfvao',
-  dataset: 'production',
-
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool()],
 
   schema: {
     types: schemaTypes,
