@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard';
 
 type Props = {};
 
-function Experience({ }: Props) {
+function ExperienceSection({ }: Props) {
     return (
         <motion.div
             className="h-screen grid sm:grid-cols-[1fr_6fr_1fr] grid-cols-[24px_1fr_6fr_1fr_24px] grid-rows-[48px_1fr_4fr_2fr_48px]
@@ -28,4 +28,4 @@ function Experience({ }: Props) {
     );
 }
 
-export default Experience;
+export default ExperienceSection;
