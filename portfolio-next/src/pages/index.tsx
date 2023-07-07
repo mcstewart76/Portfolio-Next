@@ -34,8 +34,8 @@ const Home = (
       <main >
         <div className="bg-zinc-800 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
         scrollbar scrollbar-track-slate-700/30 scrollbar-thumb-blue-400">
-          <Header 
-          // socials= {socials} 
+          <Header
+          // socials= {socials}
           />
           <section id='hero' className="snap-start">
             <Hero />
